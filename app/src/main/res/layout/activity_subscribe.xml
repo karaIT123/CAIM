@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1"
+    tools:context=".Subscribe">
+
+    <ImageView
+        android:id="@+id/sb_imageView"
+        android:layout_width="197dp"
+        android:layout_height="194dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/sb_FirstName"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="FistName"
+        android:textColorHint="#71ADF8"
+        android:textSize="15sp"
+        android:layout_below="@+id/sb_imageView"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:layout_marginTop="30sp"/>
+
+    <EditText
+        android:id="@+id/sb_LastName"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="LastName"
+        android:textColorHint="#71ADF8"
+        android:textSize="15sp"
+        android:layout_below="@+id/sb_FirstName"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:layout_marginTop="30sp"/>
+
+    <EditText
+        android:id="@+id/sb_Password"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Password"
+        android:textColorHint="#71ADF8"
+        android:textSize="15sp"
+        android:layout_below="@+id/sb_LastName"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:layout_marginTop="30sp"/>
+
+    <EditText
+        android:id="@+id/sb_ConfirmPassword"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Confirm Password"
+        android:textColorHint="#71ADF8"
+        android:textSize="15sp"
+        android:layout_below="@+id/sb_Password"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:layout_marginTop="30sp"/>
+
+    <Button
+        android:id="@+id/sb_btn_sub"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sb_ConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:background="#71ADF8"
+        android:text="S'inscrire"
+        android:textSize="15sp"
+        app:backgroundTint="#60B0FF" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/sb_btn_sub"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/sb_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Déjà un compte?"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/sb_have_accout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:onClick="goToLogin"
+            android:text="S'inscrire"
+            android:textColor="#165697"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+</android.widget.RelativeLayout>

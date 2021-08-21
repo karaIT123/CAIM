@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="197dp"
+        android:layout_height="194dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/editText_User"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nom d'Utilisateur"
+        android:textColorHint="#71ADF8"
+        android:textSize="15sp"
+        android:layout_below="@+id/imageView2"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:layout_marginTop="30sp"/>
+
+    <EditText
+        android:id="@+id/editText_PasswordConnexion"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@color/white"
+        android:layout_below="@+id/editText_User"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:hint="Mot de Passe"
+        android:textColorHint="#71ADF8"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"/>
+
+    <Button
+        android:id="@+id/button_Connexion"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_PasswordConnexion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:background="#71ADF8"
+        android:text="Connexion"
+        android:textSize="15sp"
+        app:backgroundTint="#60B0FF" />
+
+    <LinearLayout
+        android:id="@+id/lyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/button_Connexion"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous n'avez pas de compte?"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView_Enregistrement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:onClick="goToSubscribe"
+            android:text="S'Enregistrer"
+            android:textColor="#1B65A5"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100sp"
+        android:layout_below="@+id/lyt"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/gust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continuer en tant qu'invité"
+            android:textColor="#034187"
+            android:textSize="15sp"
+            android:onClick="goToMainPage"/>
+
+
+    </LinearLayout>
+
+
+</android.widget.RelativeLayout>
