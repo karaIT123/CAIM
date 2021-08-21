@@ -52,6 +52,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20sp"
         android:background="#71ADF8"
+        android:onClick="Login"
         android:text="Connexion"
         android:textSize="15sp"
         app:backgroundTint="#60B0FF" />

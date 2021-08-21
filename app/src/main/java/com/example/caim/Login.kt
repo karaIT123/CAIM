@@ -18,6 +18,13 @@ class Login : AppCompatActivity() {
 
     fun goToMainPage(view: View) {
         val i:Intent = Intent(this, MainPage::class.java)
+        i.putExtra("status",0)
+        startActivity(i)
+    }
+
+    fun Login(view: View) {
+        val i:Intent = Intent(this, MainPage::class.java)
+        i.putExtra("status",1)
         startActivity(i)
     }
 }
